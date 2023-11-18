@@ -22,9 +22,10 @@ const rooms = {
         exits: {south: 'start', east: 'treasureRoom'},
     },
     treasureRoom: {
-        description: "You've found the treasure room! There's a massive chest in the center. Congratulations!",
+        description: "You've found the treasure room! There's a massive chest in the center. Congratulations!, You're rich mate!",
         exits: {west: 'hallway'},
     }
+    
 };
 
 function handleCommand(command) {
@@ -79,4 +80,4 @@ function handleCommand(command) {
 }
 
 // Initial description
-outputEl.innerHTML += `<div class="prompt">$></div><div>Welcome to Mini Zork!</div><div>${rooms[currentRoom].description}</div>`;
+outputEl.innerHTML += `<div class="prompt">$></div><div>Welcome to Habad's Interactive Fiction! The commands are: look, go north/go south/go east/go west</div><div>${rooms[currentRoom].description}</div>`;
