@@ -1,5 +1,12 @@
 /* --- Global Styles --- */
-@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+@font-face {
+  font-family: "VT323";
+  font-weight: 400;
+  font-style: normal;
+  /* .. means "go out of the css folder, then look into the fonts folder" */
+  src: url("./fonts/VT323-Regular.ttf") format("truetype");
+  font-display: swap;
+}
 
 body,
 html {
@@ -13,7 +20,7 @@ html {
   /* Dark blue/purple background for a retro theme */
   background-color: black;
   font-family: "VT323", monospace;
-  color: #ffcc00; /* Light green/cyan text color */
+  color: #e0e0e0; /* Light green/cyan text color */
   font-size: 25px;
 }
 
@@ -29,15 +36,15 @@ html {
   54%,
   56%,
   100% {
-    text-shadow: 0 0 2px #fff0c2, /* Bright white core */ 0 0 10px #ffb000; /* Green glow */
+    text-shadow: 0 0 1px #ffffff, 0 0 4px #b0b0b0;
     opacity: 1;
   }
   /* Occasionally, briefly reduce the glow and opacity for the flicker effect */
   20%,
   24%,
   55% {
-    text-shadow: 0 0 1px #fff0c2;
-    opacity: 0.8;
+    text-shadow: 0 0 1px #ffffff;
+    opacity: 0.85;
   }
 }
 
@@ -49,10 +56,10 @@ html {
   overflow-y: auto;
 
   /* 1. Apply the text glow immediately */
-  text-shadow: 0 0 2px #fff0c2, 0 0 10px #ffb000;
+  text-shadow: 0 0 1px #ffffff, 0 0 4px #b0b0b0;
 
   /* 2. Apply the flicker animation */
-  animation: flicker 2s infinite alternate;
+  animation: flicker 2.5s infinite alternate;
 
   /* 3. Optional: Subtle horizontal lines (scanlines) for authenticity */
   background-image: repeating-linear-gradient(
