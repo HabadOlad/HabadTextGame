@@ -13,7 +13,7 @@ html {
   /* Dark blue/purple background for a retro theme */
   background-color: black;
   font-family: "VT323", monospace;
-  color: #ccffcc; /* Light green/cyan text color */
+  color: #ffcc00; /* Light green/cyan text color */
   font-size: 25px;
 }
 
@@ -29,14 +29,14 @@ html {
   54%,
   56%,
   100% {
-    text-shadow: 0 0 2px #ccffcc, /* Bright white core */ 0 0 10px #00ff00; /* Green glow */
+    text-shadow: 0 0 2px #fff0c2, /* Bright white core */ 0 0 10px #ffb000; /* Green glow */
     opacity: 1;
   }
   /* Occasionally, briefly reduce the glow and opacity for the flicker effect */
   20%,
   24%,
   55% {
-    text-shadow: 0 0 1px #ccffcc;
+    text-shadow: 0 0 1px #fff0c2;
     opacity: 0.8;
   }
 }
@@ -49,7 +49,7 @@ html {
   overflow-y: auto;
 
   /* 1. Apply the text glow immediately */
-  text-shadow: 0 0 2px #ccffcc, 0 0 10px #00ff00;
+  text-shadow: 0 0 2px #fff0c2, 0 0 10px #ffb000;
 
   /* 2. Apply the flicker animation */
   animation: flicker 2s infinite alternate;
@@ -84,7 +84,7 @@ html {
   font-size: 25px;
 
   /* --- FIX: ADDED FLICKER EFFECT TO INPUT --- */
-  text-shadow: 0 0 2px #ccffcc, 0 0 10px #00ff00;
+  text-shadow: 0 0 2px #fff0c2, 0 0 10px #ffb000;
   animation: flicker 2s infinite alternate;
   /* ------------------------------------- */
 }
