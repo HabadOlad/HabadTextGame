@@ -89,12 +89,7 @@ html {
 #input-line {
   display: flex;
   align-items: center;
-}
-
-.prompt {
-  margin-right: 5px;
-  /* Make the prompt slightly brighter/more stable */
-  text-shadow: 0 0 5px #ffffff;
+  width: 100%;
 }
 
 #output {
@@ -102,7 +97,9 @@ html {
 }
 
 #input {
-  width: 100%;
+  /* CHANGE THIS: remove width: 100% and replace it with flex-grow */
+  flex-grow: 1;
+
   border: none;
   background: none;
   outline: none;
