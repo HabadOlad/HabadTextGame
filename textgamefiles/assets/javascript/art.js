@@ -1,5 +1,22 @@
-const habadOlad = "";
-
-const treasureChest = "";
-const knife = "";
-const butcher = "";
+const artLibrary = {
+  titlescreen: `
+  ▗▄▄▄▖▐▌   ▗▞▀▚▖    ▗▄▄▄▖▗▞▀▚▖ ▄▄▄ ▄ ▗▞▀▚▖    ▗▄▄▄▖ ▄▄▄  ■  ▗▞▀▜▌   ■  ▗▞▀▚▖
+    █  ▐▌   ▐▛▀▀▘    ▐▌   ▐▛▀▀▘█    ▄ ▐▛▀▀▘    ▐▌   ▀▄▄▗▄▟▙▄▖▝▚▄▟▌▗▄▟▙▄▖▐▛▀▀▘
+    █  ▐▛▀▚▖▝▚▄▄▖    ▐▛▀▀▘▝▚▄▄▖█    █ ▝▚▄▄▖    ▐▛▀▀▘▄▄▄▀ ▐▌         ▐▌  ▝▚▄▄▖
+    █  ▐▌ ▐▌         ▐▙▄▄▖          █          ▐▙▄▄▖     ▐▌         ▐▌       
+                                                         ▐▌         ▐▌       
+                                                                           
+                                                                           
+    `,
+  door: `
+  
+  `,
+  bloodStainedButcher: `
+  
+  `,
+  balefulBaker: `
+  `,
+  brimStoneBlacksmith: `
+  `,
+  fearsomeFishmonger: ``,
+};
