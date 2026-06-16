@@ -7,12 +7,12 @@ const nameprompt = document.getElementById("nameprompt");
 statusBar.innerHTML += `location placeholder for now`;
 
 // Initial output for the text
-outputEl.innerHTML += `<div class="prompt">$></div><div>Habad's Interactive Fiction,Copyright (c) 2025,
+outputEl.innerHTML += `<div>Habad's Interactive Fiction,Copyright (c) 2025,
 Habadcorp, Inc. All rights reserved.
 Habad's Interactive fiction is a registered trademark of
 HabadCorp, Inc.</div>`;
 outputEl.innerHTML += `<br />`;
-outputEl.innerHTML += `<div class="prompt">$></div><pre class="welcome-art">${`
+outputEl.innerHTML += `<pre class="welcome-art">${`
   ▗▄▄▄▖▐▌   ▗▞▀▚▖    ▗▄▄▄▖▗▞▀▚▖ ▄▄▄ ▄ ▗▞▀▚▖    ▗▄▄▄▖ ▄▄▄  ■  ▗▞▀▜▌   ■  ▗▞▀▚▖
     █  ▐▌   ▐▛▀▀▘    ▐▌   ▐▛▀▀▘█    ▄ ▐▛▀▀▘    ▐▌   ▀▄▄▗▄▟▙▄▖▝▚▄▟▌▗▄▟▙▄▖▐▛▀▀▘
     █  ▐▛▀▚▖▝▚▄▄▖    ▐▛▀▀▘▝▚▄▄▖█    █ ▝▚▄▄▖    ▐▛▀▀▘▄▄▄▀ ▐▌         ▐▌  ▝▚▄▄▖
@@ -22,5 +22,6 @@ outputEl.innerHTML += `<div class="prompt">$></div><pre class="welcome-art">${`
                                                                            
 `}</pre>`;
 outputEl.innerHTML += `<br />`;
-outputEl.innerHTML += `<div class="prompt">$></div><div>You have somehow found this dingy degraded battered old wooden door, it's your chance too escape the enemies relentelss soldiers who've been tracking you. However, this building may have more too it than you thought adventurer!.....Do you dare enter?</div>`;
+outputEl.innerHTML += `<div>You have somehow found this dingy degraded battered old wooden door, it's your chance to escape the enemies relentless soldiers who've been tracking you. However, this building may have more to it than you thought adventurer!.....Do you dare enter?</div>`;
 outputEl.innerHTML += `<br />`;
+nameprompt.innerHTML += `What is your name?....`;

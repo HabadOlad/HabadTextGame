@@ -74,15 +74,16 @@ html {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #e0e0e0;
-  color: #0b0b0b;
+  background-color: #ffffff; /* Crisper, high-contrast retro white */
+  color: #000000; /* Solid black text */
   display: flex;
-  justify-content: space-around;
-  padding: 2px 20px;
+  justify-content: space-between; /* Authentic alignment trick */
+  padding: 4px 20px; /* Slightly more vertical breathing room for VT323 */
   box-sizing: border-box;
   z-index: 9999;
   font-family: "VT323", monospace;
   font-size: 25px;
+  text-transform: uppercase; /* Ensures all status text defaults to uppercase */
 }
 
 /* --- Input Area --- */

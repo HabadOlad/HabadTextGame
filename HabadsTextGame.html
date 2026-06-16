@@ -8,14 +8,17 @@
     <title>Habad's Interactive Fiction</title>
   </head>
   <body>
+    <!--Because your CSS is using display: flex; and justify-content: space-between;, 
+    the browser will automatically take those two spans and push them perfectly to opposite sides of the screen.-->
     <div id="status-bar">
       <span class="location"></span>
+      <span class="stats"></span>
     </div>
     <div id="terminal">
       <div id="output"></div>
 
       <div id="input-line">
-        <span id="nameprompt">What is your name?.... </span>
+        <span id="nameprompt"></span>
         <input type="text" id="input" autofocus autocomplete="off" />
       </div>
     </div>
