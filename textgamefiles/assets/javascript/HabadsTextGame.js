@@ -4,6 +4,14 @@ const inputEl = document.getElementById("input");
 const outputEl = document.getElementById("output");
 const nameprompt = document.getElementById("nameprompt");
 
+let playerName = "";
+
+inputEl.addEventListener("keydown", function (event) {
+  if (event.key == "Enter") {
+    let inputText = inputEl.value.trim();
+  }
+});
+
 //status bar = location and updates of the location
 locationBar.innerHTML = `The Eerie Estate - Front Gate`;
 statsBar.innerHTML = `Score: 0 / Moves: 0`; // Pushes perfectly to the right!
