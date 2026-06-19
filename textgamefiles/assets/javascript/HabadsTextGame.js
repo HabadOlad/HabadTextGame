@@ -9,6 +9,19 @@ let playerName = "";
 inputEl.addEventListener("keydown", function (event) {
   if (event.key == "Enter") {
     let inputText = inputEl.value.trim();
+
+    if (playerName === "") {
+      if (inputText === "") return;
+
+      playerName = inputText;
+      inputEl.value = "";
+
+      outputEl.innerHTML += `<div>"Ah, so your name is <strong>${playerName}</strong>," a cold breeze seems to whisper through the cracks of the battered door. </div><br />`;
+      outputEl.innerHTML += `<div>"Welcome to the Eerie Estate ${playerName}...do not overstay your welcome here......." </div><br />`;
+
+      // NOW WE SWAP IT! Only after they press enter does it become a permanent prompt.
+      nameprompt.innerHTML = "$> ";
+    }
   }
 });
 
