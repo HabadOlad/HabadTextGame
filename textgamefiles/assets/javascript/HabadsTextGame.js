@@ -25,8 +25,45 @@ inputEl.addEventListener("keydown", function (event) {
   }
 });
 
+//rooms and description of rooms aka the game map
+const rooms = {
+  frontGate: {
+    title: "The Eerie Estate - Front Gate",
+    description:
+      "You are standing before a dingy, degraded, battered old wooden door. Heavy rain pours down. Type <strong>ENTER</strong> or <strong>IN</strong> to open the door.",
+    exits: {
+      in: "foyer",
+      enter: "foyer",
+    },
+  },
+  foyer: {
+    title: "The Eerie Estate - Foyer",
+    description:
+      "The air inside is thick with dust. A grand, broken chandelier hangs precariously above. To the north is a dark hallway. To the south is the exit back to safety.",
+    exits: {
+      north: "hallway",
+      south: "frontGate",
+      out: "frontGate",
+      exit: "frontGate",
+    },
+  },
+  hallway: {
+    title: "The Dark Hallway",
+    description:
+      "A narrow corridor. Cobwebs brush against your face. You see an old newspaper on a small table here.",
+    exits: {
+      south: "foyer",
+    },
+  },
+};
+
+//this will track where the player is currently
+let currentLocation = null;
+//place holder for now
+
 //status bar = location and updates of the location
 locationBar.innerHTML = `The Eerie Estate - Front Gate`;
+
 statsBar.innerHTML = `Score: 0 / Moves: 0`; // Pushes perfectly to the right!
 
 // Initial output for the text
